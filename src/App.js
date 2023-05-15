@@ -1,9 +1,7 @@
 function App() {
- 
   return (
     <div>
-      <h1>pease work</h1>
-      <div></div>
+      <h1>lets start the UI</h1>
     </div>
   );
 }
