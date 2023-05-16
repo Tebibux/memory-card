@@ -10,8 +10,7 @@ function Main() {
 		<StartingBoard />
 		<ScoreBoard />
 		<CardBoard />
-		<StatusBoard />	
-	  
+		<StatusBoard />		  
 	</div>
   );
 }
