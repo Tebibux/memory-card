@@ -24,54 +24,6 @@
 	font-size: 1.1rem;
 }
 
-.main {
-	height: 100%;
-	width: 100%;
-	display: grid;
-	justify-items: center;
-	margin: 20px 0px;
-	grid-template-rows: minmax(80px, 100px) 1fr minmax(80px, 100px);
-}
-.score-board{
-	width: 70%;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	background-color: aquamarine;
-	margin: 20px 0px;
-}
-
-.score-board {
-  text-align: center;
-  padding: 20px;
-  background-color: #b3791c30;
-  border-radius: 8px;
-  transition: transform 0.5s ease;
-}
-
-.score-board:hover {
-  transform: translateY(-5px);
-}
-
-.score-board h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #252525;
-}
-
-
-
-
-
-
-
-
-
-.card-board{
-	width: 100%;
-	background-color: rgba(0, 255, 255, 0.613);
-}
 .main-starting {
 	display: grid;
 	place-content: center;
@@ -118,7 +70,93 @@
 	text-align: center;
 }
 
+.main {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	justify-items: center;
+	margin: 20px 0px;
+	grid-template-rows: minmax(80px, 100px) 1fr minmax(80px, 100px);
+}
 
+.score-board {
+	width: 70%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: aquamarine;
+	margin: 20px 0px;
+}
+
+.score-board {
+	text-align: center;
+	padding: 20px;
+	background-color: #b3791c30;
+	border-radius: 8px;
+	transition: transform 0.5s ease;
+}
+
+.score-board:hover {
+	transform: translateY(-5px);
+}
+
+.score-board h3 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #252525;
+}
+
+.card-board {
+	width: 100%;
+	background-color: rgba(0, 255, 255, 0.613);
+}
+
+.main {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	justify-items: center;
+	margin: 20px 0px;
+	grid-template-rows: minmax(80px, 100px) minmax(600px, 1fr) minmax(80px, 100px);
+}
+
+.card-board {
+	width: 70%;
+	display: grid;
+	resize: both;
+	overflow: auto;
+	padding: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+
+}
+
+.img-box {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+
+}
+
+img {
+	background-size: cover;
+	/* adjust width and height according to your image size */
+	height: 200px;
+	display: block;
+	padding: 5px;
+}
+.img-text{
+	display: flex;
+	align-items: center;
+}
+.img-text p{
+	padding: 0px 10px;
+}
 .footer {
 	height: 100%;
 	width: 100%;

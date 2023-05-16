@@ -6,7 +6,62 @@ function CardBoard() {
 		<div className='card-board'>
 			<div className="img-box">
 				<img src={myImage} alt="" />
-				<div className="text">
+				<div className="img-text">
+					<p>1</p>
+					<p>Hareri</p>
+				</div>
+			</div>
+			<div className="img-box">
+				<img src={myImage} alt="" />
+				<div className="img-text">
+					<p>1</p>
+					<p>Hareri</p>
+				</div>
+			</div>
+			<div className="img-box">
+				<img src={myImage} alt="" />
+				<div className="img-text">
+					<p>1</p>
+					<p>Hareri</p>
+				</div>
+			</div>
+			<div className="img-box">
+				<img src={myImage} alt="" />
+				<div className="img-text">
+					<p>1</p>
+					<p>Hareri</p>
+				</div>
+			</div>
+			<div className="img-box">
+				<img src={myImage} alt="" />
+				<div className="img-text">
+					<p>1</p>
+					<p>Hareri</p>
+				</div>
+			</div>
+			<div className="img-box">
+				<img src={myImage} alt="" />
+				<div className="img-text">
+					<p>1</p>
+					<p>Hareri</p>
+				</div>
+			</div>
+			<div className="img-box">
+				<img src={myImage} alt="" />
+				<div className="img-text">
+					<p>1</p>
+					<p>Hareri</p>
+				</div>
+			</div>
+			<div className="img-box">
+				<img src={myImage} alt="" />
+				<div className="img-text">
+					<p>1</p>
+					<p>Hareri</p>
+				</div>
+			</div><div className="img-box">
+				<img src={myImage} alt="" />
+				<div className="img-text">
 					<p>1</p>
 					<p>Hareri</p>
 				</div>
