@@ -5,14 +5,19 @@ import CardBoard from './cardBoard/CardBoard';
 import StatusBoard from './cardBoard/StatusBoard';
 
 function Main() {
-  return (
-	<div>
-		<StartingBoard />
-		<ScoreBoard />
-		<CardBoard />
-		<StatusBoard />		  
-	</div>
-  );
+	const started = false;
+
+	return started ? (
+		<div className="main">
+			<ScoreBoard />
+			<CardBoard />
+			<StatusBoard />
+		</div>
+	) : (
+		<div className="main-starting">
+			<StartingBoard />
+		</div>
+	);
 }
 
 export default Main;

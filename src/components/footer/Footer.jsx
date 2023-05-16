@@ -1,20 +1,20 @@
 import React from 'react';
-import {FaGithub} from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 function Footer() {
 	const year = new Date();
-  return (
-	<div className="footer">
-		<div className="footer-items">
-			<h4>Tebibux &#169; {year.getFullYear()} </h4>
-	  <p>
-		<a href="https://github.com/Tebibux/memory-card">
-	  		<FaGithub />
-		</a>
-	</p>
+	return (
+		<div className="footer">
+			<div className="footer-items">
+				<h4>Tebibux &#169; {year.getFullYear()} </h4>
+				<p>
+					<a href="https://github.com/Tebibux/memory-card">
+						<FaGithub />
+					</a>
+				</p>
+			</div>
+
 		</div>
-	  
-	</div>
-  );
+	);
 }
 
 export default Footer;
