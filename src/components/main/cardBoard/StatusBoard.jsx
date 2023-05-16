@@ -3,7 +3,7 @@ import React from 'react';
 function StatusBoard() {
   return (
 	<div>
-	  <h2>This is Status Board!!</h2>
+	  <h2>You are either Novice or Skilled or Expert</h2>
 	</div>
   );
 }

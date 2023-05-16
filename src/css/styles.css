@@ -7,25 +7,71 @@
 .container {
 	height: 100vh;
 	display: grid;
+	place-items: center;
 	grid-template-rows: 70px 1fr 45px;
 	row-gap: 5px;
 	font-family: sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
 }
 
 .header {
+	height: 100%;
+	width: 100%;
 	display: grid;
 	place-content: center;
-	background-color: rgba(139, 227, 253, 0.611);
+	background-color: rgba(139, 227, 253, 0.36);
 	color: rgb(0, 0, 0);
-	box-shadow: 0px 5px 16px 0.1px rgba(0, 0, 0, 0.505);
+	box-shadow: 0px 5px 16px 0.1px rgba(0, 0, 0, 0.318);
 	font-size: 1.1rem;
 }
 
 .main {
+	height: 100%;
+	width: 100%;
 	display: grid;
-	place-content: center;
+	justify-items: center;
+	margin: 20px 0px;
+	grid-template-rows: minmax(80px, 100px) 1fr minmax(80px, 100px);
+}
+.score-board{
+	width: 70%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: aquamarine;
+	margin: 20px 0px;
 }
 
+.score-board {
+  text-align: center;
+  padding: 20px;
+  background-color: #b3791c30;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.score-board:hover {
+  transform: translateY(-5px);
+}
+
+.score-board h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #252525;
+}
+
+
+
+
+
+
+
+
+
+.card-board{
+	width: 100%;
+	background-color: rgba(0, 255, 255, 0.613);
+}
 .main-starting {
 	display: grid;
 	place-content: center;
@@ -74,6 +120,8 @@
 
 
 .footer {
+	height: 100%;
+	width: 100%;
 	display: grid;
 	place-items: center;
 	width: 100%;
