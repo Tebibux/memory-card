@@ -8,14 +8,15 @@ function Main() {
 	const started = false;
 
 	return started ? (
+		<div className="main-starting">
+			<StartingBoard />
+		</div>
+	) : (
+
 		<div className="main">
 			<ScoreBoard />
 			<CardBoard />
 			<StatusBoard />
-		</div>
-	) : (
-		<div className="main-starting">
-			<StartingBoard />
 		</div>
 	);
 }
