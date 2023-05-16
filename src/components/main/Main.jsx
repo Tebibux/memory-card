@@ -5,7 +5,7 @@ import CardBoard from './cardBoard/CardBoard';
 import StatusBoard from './cardBoard/StatusBoard';
 
 function Main() {
-	const started = false;
+	const started = true;
 
 	return started ? (
 		<div className="main-starting">
