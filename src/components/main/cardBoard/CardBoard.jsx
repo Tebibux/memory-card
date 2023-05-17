@@ -1,5 +1,4 @@
 import React from 'react';
-import myImage from '../../../Asset/01_Gojjam.jpg';
 import myImages from '../../../Asset/ResourceObject';
 function CardBoard() {
 	return (
