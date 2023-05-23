@@ -147,21 +147,7 @@
 	object-fit: cover;
 }
 
-.img-text {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 4fr;
-	background-color: #1b1010aa;
-}
-
-.img-text p {
-	font-weight: bolder;
-	color: #f1f1f1;
-	padding: 0px 10px;
-	height: 20px;
-}
-
-.footer {
+footer {
 	height: 100%;
 	width: 100%;
 	display: grid;
