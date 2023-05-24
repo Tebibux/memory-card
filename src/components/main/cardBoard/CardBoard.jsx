@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import myImages from '../../../Asset/ResourceObject';
-function CardBoard() {
+
+
+const CardBoard = () => {
 	const [randomImage, setRandomImage] = useState(Object.values(myImages));
 	const [score, setScore] = useState(0);
 
@@ -14,10 +16,10 @@ function CardBoard() {
 	const handleScore = (e) => {
 		// check if the image exits in the score array
 		// 
-		if(existed.includes(e.target.src)){
+		if (existed.includes(e.target.src)) {
 			return
 		}
-		else{
+		else {
 			setScore(score + 1)
 			setExisted([...existed, e.target.src])
 			console.log(e.target.src);
