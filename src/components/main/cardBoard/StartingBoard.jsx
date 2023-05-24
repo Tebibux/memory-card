@@ -1,6 +1,9 @@
 import React from 'react';
 
-function StartingBoard() {
+const StartingBoard = ({started}) => {
+	const handleClick = () => {
+		started(false)
+	}
 	return (
 		<div className='startingBoard'>
 			<h2 className='game-starting-text'>
@@ -8,7 +11,7 @@ function StartingBoard() {
 				Match image cards, remember numbers, and enjoy a captivating and
 				engaging gaming experience!"
 			</h2>
-			<button className='btn-start'>Start</button>
+			<button className='btn-start' onClick={handleClick}>Start</button>
 		</div>
 	);
 }

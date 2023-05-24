@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import myImages from '../../../Asset/ResourceObject';
 
 
-const CardBoard = () => {
+const CardBoard = ({ onScoreUpdate, setScore }) => {
 	const [randomImage, setRandomImage] = useState(Object.values(myImages));
-	const [score, setScore] = useState(0);
-
 	const [existed, setExisted] = useState([]);
-
+	const count = 0;
 
 	const handleRandomize = () => {
 		const shuffledImages = Object.values(myImages).sort(() => Math.random() - 0.5);
@@ -17,15 +15,14 @@ const CardBoard = () => {
 		// check if the image exits in the score array
 		// 
 		if (existed.includes(e.target.src)) {
-			return
+			console.log('already exits')
 		}
 		else {
-			setScore(score + 1)
+			onScoreUpdate(1) // increment the score by 1
 			setExisted([...existed, e.target.src])
 			console.log(e.target.src);
 			handleRandomize();
 		}
-		return score;
 	}
 
 
