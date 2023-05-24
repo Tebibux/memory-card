@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import myImages from '../../../Asset/ResourceObject';
 
 
-const CardBoard = ({ onScoreUpdate, setScore }) => {
+const CardBoard = ({ onScoreUpdate }) => {
 	const [randomImage, setRandomImage] = useState(Object.values(myImages));
 	const [existed, setExisted] = useState([]);
-	const count = 0;
 
 	const handleRandomize = () => {
 		const shuffledImages = Object.values(myImages).sort(() => Math.random() - 0.5);
@@ -13,7 +12,6 @@ const CardBoard = ({ onScoreUpdate, setScore }) => {
 	}
 	const handleScore = (e) => {
 		// check if the image exits in the score array
-		// 
 		if (existed.includes(e.target.src)) {
 			console.log('already exits')
 		}

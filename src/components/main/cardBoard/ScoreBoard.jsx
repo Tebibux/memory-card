@@ -16,7 +16,7 @@ const ScoreBoard = ({ scoreData }) => {
 			setHighScore(scoreData);
 			localStorage.setItem('highScore', scoreData);
 		}
-	}, [scoreData]);
+	}, [highScore, scoreData]);
 
 	return (
 		<div className='score-board'>
