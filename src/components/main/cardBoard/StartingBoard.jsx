@@ -2,7 +2,7 @@ import React from 'react';
 
 const StartingBoard = ({started}) => {
 	const handleClick = () => {
-		started(false)
+		started(true)
 	}
 	return (
 		<div className='startingBoard'>

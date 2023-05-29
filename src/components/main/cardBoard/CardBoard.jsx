@@ -3,7 +3,7 @@ import myImages from '../../../Asset/ResourceObject';
 import StatusBoard from './StatusBoard';
 
 
-const CardBoard = ({ onScoreUpdate, scoreData }) => {
+const CardBoard = ({ onScoreUpdate, scoreData, started}) => {
 	const [randomImage, setRandomImage] = useState(Object.values(myImages));
 	const [existed, setExisted] = useState([]);
 	const [gameDecide, setGameDecide] = useState(false);
@@ -39,7 +39,7 @@ const CardBoard = ({ onScoreUpdate, scoreData }) => {
 		})}
 	  </div>
 	) : (
-		<StatusBoard scoreData={scoreData} />
+		<StatusBoard scoreData={scoreData} started={started}  />
 	);
   };
   

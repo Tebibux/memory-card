@@ -12,15 +12,18 @@ function Main({ onStart, gameStarter }) {
 		setScore(score + newScoreData);
 	}
 
-	return onStart ? (
+	return !onStart ? (
 		<div className="main-starting">
 			<StartingBoard started={gameStarter} />
 		</div>
 	) : (
 		<div className="main">
 			<ScoreBoard scoreData={score} />
-			<CardBoard onScoreUpdate={handleScoreData} setScore={setScore} scoreData={score} />
-			
+			<CardBoard onScoreUpdate={handleScoreData}
+				started={gameStarter}
+				setScore={setScore}
+				scoreData={score} />
+
 		</div>
 	);
 }

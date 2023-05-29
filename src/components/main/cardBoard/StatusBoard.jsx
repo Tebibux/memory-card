@@ -1,21 +1,22 @@
 import React from 'react';
-import StartingBoard from './StartingBoard';
 
-const StatusBoard = ({ scoreData }) => {
-	const handleReturn = () => {
-		
+const StatusBoard = ({ scoreData, started }) => {
+	const handleClick = () => {
+		started(false)
 	}
 	if (scoreData <= 6) {
 		return (
 			<div>
 				<h2>You are Novice in remembering keep playing</h2>
-				<button onClick={handleReturn}>Return to Home</button>
+				<button className="btn-start" onClick={handleClick}>Return to Home</button>
 			</div>
 		);
 	} else if (scoreData > 6 && scoreData < 14) {
 		return (
 			<div>
 				<h2>You are Skilled in remembering keep playing</h2>
+				<button className="btn-start" onClick={handleClick}>Return to Home</button>
+
 			</div>
 		);
 	} else {
@@ -33,6 +34,8 @@ const StatusBoard = ({ scoreData }) => {
 					The quest for knowledge, burning bright.
 					For I am the Expert, with knowledge profound,
 					Here to accompany you, always around.</h2>
+				<button className="btn-start" onClick={handleClick}>Return to Home</button>
+
 			</div>
 		);
 	}
