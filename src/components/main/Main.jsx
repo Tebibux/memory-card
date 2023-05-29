@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import StartingBoard from './cardBoard/StartingBoard';
 import ScoreBoard from './cardBoard/ScoreBoard';
 import CardBoard from './cardBoard/CardBoard';
-import StatusBoard from './cardBoard/StatusBoard';
 
 
-function Main({onStart, gameStarter}) {
+
+function Main({ onStart, gameStarter }) {
 	const [score, setScore] = useState(0);
 
 	const handleScoreData = (newScoreData) => {
@@ -19,8 +19,8 @@ function Main({onStart, gameStarter}) {
 	) : (
 		<div className="main">
 			<ScoreBoard scoreData={score} />
-			<CardBoard onScoreUpdate={handleScoreData} setScore={setScore} gameStarter={gameStarter} />
-			<StatusBoard />
+			<CardBoard onScoreUpdate={handleScoreData} setScore={setScore} scoreData={score} />
+			
 		</div>
 	);
 }

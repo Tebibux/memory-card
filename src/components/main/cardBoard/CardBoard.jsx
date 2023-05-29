@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import myImages from '../../../Asset/ResourceObject';
-import StartingBoard from './cardBoard/StartingBoard';
+import StatusBoard from './StatusBoard';
 
 
-const CardBoard = ({ onScoreUpdate, gameStarter }) => {
+const CardBoard = ({ onScoreUpdate, scoreData }) => {
 	const [randomImage, setRandomImage] = useState(Object.values(myImages));
 	const [existed, setExisted] = useState([]);
-	const [gameDecide, setGameDecide] = useState(true);
+	const [gameDecide, setGameDecide] = useState(false);
   
 	const handleRandomize = () => {
 	  const shuffledImages = Object.values(myImages).sort(() => Math.random() - 0.5);
@@ -19,12 +19,12 @@ const CardBoard = ({ onScoreUpdate, gameStarter }) => {
 		setExisted([...existed, e.target.src]);
 		console.log(e.target.src);
 		handleRandomize();
-	  } else{
-		setGameDecide(false)
+	  } else {
+		setGameDecide(true); // Change to true when the image already exists
 	  }
 	};
   
-	return gameDecide ? (
+	return !gameDecide ? (
 	  <div className="card-board">
 		{Object.entries(randomImage).map(([key, image], index) => {
 		  if (index <= 8) {
@@ -39,9 +39,8 @@ const CardBoard = ({ onScoreUpdate, gameStarter }) => {
 		})}
 	  </div>
 	) : (
-		<StartingBoard started={gameStarter} />
+		<StatusBoard scoreData={scoreData} />
 	);
   };
   
-
 export default CardBoard;
