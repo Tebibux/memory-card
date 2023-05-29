@@ -19,7 +19,7 @@ function Main({onStart, gameStarter}) {
 	) : (
 		<div className="main">
 			<ScoreBoard scoreData={score} />
-			<CardBoard onScoreUpdate={handleScoreData} setScore={setScore}/>
+			<CardBoard onScoreUpdate={handleScoreData} setScore={setScore} gameStarter={gameStarter} />
 			<StatusBoard />
 		</div>
 	);
